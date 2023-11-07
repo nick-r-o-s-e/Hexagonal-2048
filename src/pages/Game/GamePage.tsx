@@ -123,7 +123,7 @@ function GamePage() {
                 <h2 className="info__heading">Credits</h2>
 
                 <div className="info__credits__actions">
-                  <a href="" target="_blank">
+                  <a href="https://github.com/nick-r-o-s-e/Hexagonal-2048" target="_blank">
                     <Button
                       className="info__credits__actions__btn"
                       variant="contained"
