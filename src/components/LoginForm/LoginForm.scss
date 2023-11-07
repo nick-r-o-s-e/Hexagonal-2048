@@ -1,0 +1,288 @@
+@keyframes appear-login {
+  from {
+    scale: (0);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: (1);
+  }
+}
+
+@keyframes appear-overlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.home-login {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(53, 53, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+
+
+.login-container {
+  display: flex;
+  width: 1100px;
+  height: fit-content;
+  margin: 170px 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.334);
+  overflow: hidden;
+  animation: appear-login 0.6s ease-out;
+}
+
+.login__banner-wrapper {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: rgb(203, 132, 31);
+  background: -moz-linear-gradient(
+    110deg,
+    rgb(195, 120, 15) 0%,
+    rgba(253, 29, 29, 1) 31%,
+    rgba(131, 58, 180, 1) 91%
+  );
+  background: -webkit-linear-gradient(
+    110deg,
+    rgb(195, 120, 15) 0%,
+    rgba(253, 29, 29, 1) 31%,
+    rgba(131, 58, 180, 1) 91%
+  );
+  background: linear-gradient(
+    110deg,
+    rgb(195, 120, 15) 0%,
+    rgba(253, 29, 29, 1) 31%,
+    rgba(131, 58, 180, 1) 91%
+  );
+}
+
+.login__banner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px 20px 20px 40px;
+}
+
+.login__banner__heading {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 3.7em;
+  line-height: 100%;
+  color: #fff;
+  margin: 5px 0 20px;
+  text-shadow: 3px 2px #393939;
+}
+
+.login__banner__features {
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 180%;
+  color: #ebebeb;
+  font-size: 1.1em;
+  padding-left: 25px;
+}
+
+.login__form {
+  width: 42%;
+  min-width: 330px;
+  background: #fff;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0 40px;
+}
+
+.login__form__overlay--loader {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(86, 86, 86, 0.629);
+  animation: appear-overlay 0.3s;
+}
+
+.login__form__heading {
+  font-size: 2.6em;
+  margin-bottom: 15px;
+}
+
+.login__form__actions {
+  width: 100%;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MuiButton-root {
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+.login__form__actions__devider {
+  width: 85%;
+  max-width: 450px;
+  text-align: center;
+  border-bottom: 2px solid #a9a9a9;
+  line-height: 0.1em;
+  font-size: 1.3em;
+  color: #7a7a7a;
+
+  span {
+    background: #fff;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 920px) {
+  .login__banner {
+    font-size: 0.9em;
+  }
+
+  .login-container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .login__banner {
+    font-size: 0.8em;
+    padding-left: 15px;
+    align-items: center;
+  }
+
+  .login__banner__features {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-container {
+    margin-top: 50px;
+    flex-direction: column;
+    max-width: 597px;
+  }
+
+  .login__banner {
+    position: static;
+    padding-left: 30px;
+    font-size: 0.8em;
+    align-items: start;
+    height: 400px;
+  }
+
+  .login__form {
+    padding-top: 18px;
+    width: 100%;
+  }
+
+  .login__form__actions {
+    gap: 1.5em;
+  }
+
+  .login__form__actions__btn {
+    width: 85%;
+    max-width: 350px;
+  }
+
+  .home-login__loader {
+    transform: translate(-50%, -200%);
+  }
+}
+
+@media (max-width: 470px) {
+  .login-container {
+    margin-top: 20px;
+  }
+
+  .login__form__heading {
+    font-size: 2.2em;
+  }
+
+  .login__banner-wrapper {
+    background-repeat: no-repeat;
+  }
+
+  .login__banner__heading {
+    font-size: 3.6em;
+    text-align: center;
+  }
+
+  .login__banner {
+    align-items: center;
+    background-size: 149% auto;
+    background-position: bottom left;
+    margin-bottom: -3.3em;
+    height: fit-content;
+    padding: 10px 8px 48%;
+    font-size: 3vw;
+  }
+
+  .login__banner__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.4em;
+    padding: 0 0 0 0.5em;
+  }
+
+  li {
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 16px;
+      top: 100%;
+      left: 50%;
+      margin-left: -8px;
+      margin-top: 0.7em;
+      border-radius: 2px;
+      position: absolute;
+      border-bottom: 1px solid #ffffffb0;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  .login__form {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .login__form__heading {
+    font-size: 2em;
+  }
+}

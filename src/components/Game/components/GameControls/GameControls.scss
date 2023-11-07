@@ -1,0 +1,70 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 500px;
+  max-width: 70vw;
+}
+
+.control {
+  svg {
+    font-size: 60px;
+    color: #e1cebe;
+  }
+}
+
+
+.contol-wrapper {
+  border-radius: 50%;
+  background-color: #353535;
+}
+
+@media (max-width: 480px) {
+  .control {
+    svg {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .control {
+    svg {
+      font-size: 40px;
+    }
+  }
+  
+  .controls {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .control {
+    svg {
+      font-size: 30px;
+    }
+  }
+
+  #field-radius-select {
+    padding: 8px 15px;
+  }
+
+  .control--radius {
+    width: 75px !important;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 220px) {
+  .controls {
+    max-width: 90vw;
+  }
+
+  .control {
+    svg {
+      font-size: 25px;
+    }
+  }
+}

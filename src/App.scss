@@ -1,0 +1,46 @@
+@keyframes appear-loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(53, 53, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0 60px;
+  width: 100%;
+}
+
+.page--loader {
+  justify-content: center;
+  animation: appear-loader 1s ease;
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding-top: 10px;
+  }
+}

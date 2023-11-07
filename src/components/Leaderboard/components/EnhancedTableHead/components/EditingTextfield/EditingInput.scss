@@ -1,0 +1,104 @@
+.edit-username-textfield-wrapper {
+  position: relative;
+  width: fit-content;
+  max-height: 1em;
+
+  &.edit-username-textfield-wrapper--animated {
+    animation: appear 0.3s ease;
+  }
+}
+
+.edit-username-textfield__action {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  animation: appear 0.4s ease-in;
+  top: 2px;
+  width: 1.2em;
+}
+
+.edit-username-textfield__action--confirm {
+  right: 0.3em;
+}
+
+.edit-username-textfield__action--cancel {
+  right: -1.3em;
+}
+
+.edit-username-textfield__loader {
+  width: 0.9em !important;
+  height: 0.9em !important;
+}
+
+.edit-username-textfield__btn {
+  animation: appear 0.2s ease-in;
+  padding: 0em;
+}
+
+.edit-username-textfield {
+  top: -5px;
+  max-height: 2.5em !important;
+  width: 100%;
+
+  input {
+    margin-right: 1.4em;
+    padding: 0.4em 0.7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .edit-username-textfield {
+    * {
+      font-size: 0.89em !important;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .edit-username-textfield {
+    font-size: 1.1em;
+  }
+
+  .edit-username-textfield__btn {
+    svg {
+      font-size: 0.8em;
+    }
+  }
+  
+  .edit-username-textfield__action--confirm {
+    right: 0.5em;
+  }
+
+  .edit-username-textfield__action--cancel {
+    right: -1.4em;
+  }
+}
+
+@media (max-width: 420px) {
+  .edit-username-textfield {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 240px) {
+  .edit-username-textfield {
+    font-size: 1.25em;
+
+    label {
+      font-size: 0.9em;
+      line-height: 2.2;
+    }
+    fieldset {
+      font-size: 1.1em;
+    }
+  }
+
+  .edit-username-textfield {
+    input {
+      font-size: 1.2em;
+    }
+  }
+}

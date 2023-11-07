@@ -1,0 +1,131 @@
+.table__head__cell {
+  background-color: #aba295;
+  padding: 0.6em 0.5em;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 135%;
+  text-wrap: nowrap !important;
+
+  &:nth-child(2) {
+    text-align: start;
+  }
+
+  svg {
+    font-size: 1em;
+    top: 50%;
+    translate: 0 -50%;
+    position: absolute;
+    margin-left: 0;
+    right: -1.4em;
+  }
+}
+
+.table__head__cell--place {
+  width: 2.2em;
+}
+
+.table__head__cell--wins,
+.table__head__cell--best {
+  padding-right: 1.2em;
+}
+
+.table__row--personal-stats {
+  .table__row--personal-stats__name-cell {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    width: 95%;
+  }
+
+  th {
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 0.6em;
+    background-color: #f0e3d3;
+    border-bottom: 3px solid #ae9e87;
+    position: relative;
+
+    &.table__data--place {
+      border-right: 1px solid #b3a89953;
+    }
+  }
+
+  .table__data--place {
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+.table__row--personal-stats__name-cell__username {
+  color: #4a4a4a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+  font-size: 0.6em;
+  margin-left: 0.3em;
+  margin-bottom: 0.15em;
+  align-self: flex-end;
+}
+
+.table__data--editing {
+  max-width: 5.6em;
+  padding-right: 1.7em !important;
+}
+
+.table__row--personal-stats__name-cell__btn {
+  margin-left: 0.5em;
+  padding: 0.1em 0.5em 0;
+  min-width: min-content;
+  line-height: 1.5;
+  top: 0;
+}
+
+@media (max-width: 460px) {
+  .table__head {
+    font-size: 0.85em;
+  }
+
+  .table__row--personal-stats__name-cell__btn {
+    font-size: 0.9em;
+  }
+
+  .table__data--editing {
+    min-width: 7.7em !important;
+  }
+
+  .table__row--personal-stats__name-cell__username {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 420px) {
+  .table__row--personal-stats__name-cell__btn {
+    line-height: 1.75;
+    font-size: 0.8em;
+  }
+
+  .edit-username-textfield {
+    font-size: 1.2em;
+  }
+
+  .edit-username-textfield__action--confirm {
+    right: 0.5em;
+  }
+
+  .edit-username-textfield__action--cancel {
+    right: -1.4em;
+  }
+}
+
+@media (max-width: 390px) {
+  .table__data--editing {
+    min-width: 11em !important;
+  }
+}
+
+@media (max-width: 240px) {
+  .table__data--editing {
+    min-width: 11em !important;
+  }
+}
