@@ -1,9 +1,9 @@
 # Hexagonal 2048 (React + Firebase)
 
-### Hosted App 
+## Hosted App 
 https://hexagonal-2048-dev.firebaseapp.com
 
-### About
+## About
 
 Online representation of the modified "2048" game. User authentication and connection to the database have been implemented to create, read and update player statistics. 
  - #### Gameplay
