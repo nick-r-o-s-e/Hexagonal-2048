@@ -3,6 +3,15 @@
 ## Hosted App 
 https://hexagonal-2048-dev.firebaseapp.com
 
+## Table of Contents
+* [About](#about)
+* [Technologies Used](#technologies-used)
+* [Screenshots](#screenshots)
+* [Project Specifications](#project-specifications)
+* [Major files](#major-files)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+
 ## About
 
 Online representation of the modified "2048" game. User authentication and connection to the database have been implemented to create, read and update player statistics. 
