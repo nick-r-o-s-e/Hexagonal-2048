@@ -5,7 +5,9 @@ https://hexagonal-2048-dev.firebaseapp.com
 
 ### About
 
-Online representation of the modified "2048" game. User authentication and connection to the database have been implemented to create, read and update player statistics.
+Online representation of the modified "2048" game. User authentication and connection to the database have been implemented to create, read and update player statistics. 
+ - #### Gameplay
+    Hexagonal 2048 is played on a hexagonal grid with a radius of 2, 3 or 4, with numbered tiles that slide when a player moves them using the 6 control keys (Q, W, E, A, S, D). Every turn, one or two new tiles randomly appears in empty spots on the board with a value of either 2 or 4. Tiles slide as far as possible in the chosen direction until they are stopped by either another tile or the edge of the grid. If two tiles of the same number collide while moving, they will merge into a tile with the total value of the two tiles that collided. The resulting tile cannot merge with another tile again in the same move. If a move causes three consecutive tiles of the same value to slide together, only the two tiles farthest along the direction of motion will combine. A scoreboard on the upper left keeps track of the user's score. The user's score starts at zero and is increased whenever two tiles combine, by the value of the new tile. The game is won when a tile with a value of 2048 appears on the board. Players can continue beyond that to reach higher scores. When the player has no legal moves (there are no empty spaces and no adjacent tiles with the same value), the game ends.
 
 ## Technologies Used
 
