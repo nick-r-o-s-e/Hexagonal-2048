@@ -112,7 +112,7 @@ function Game({ radius, playSound, fieldHeight }: Props) {
     userTiles.length > 0 &&
     fieldPoints.length == 3 * radius * (radius - 1) + 1;
 
-  //~~~ For the better perfomance calculate movedTiles in adavance,
+  //~~~ For the better perfomance calculate movedTiles in advance,
   //~~~ and after update of the new point cors fires animation in the first place,
   //~~~ initiate the rest of the field update.
   const movedTilesValues = useMemo(() => {
