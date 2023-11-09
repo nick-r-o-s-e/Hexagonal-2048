@@ -21,12 +21,11 @@ Online representation of the modified "2048" game. User authentication and conne
 ## Technologies Used
 
 - ### TypeScript
-
+- ### React
 - ### Routing
   - [React Router](https://reactrouter.com/en/main)
 
 - ### User Interface
-  - React
   - [Material-MUI](https://mui.com/)
   - [howler.js](https://howlerjs.com/) (for the sound)
   
